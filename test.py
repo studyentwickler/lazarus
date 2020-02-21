@@ -1,4 +1,4 @@
 def checkconnection():
-    print("Hello world it is my test!")
+    print("Hello world!")
 
 checkconnection()
