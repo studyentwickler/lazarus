@@ -1,4 +1,4 @@
-@Test
+@Test2
 Feature: Test web site
 
   Scenario Outline: Test web site

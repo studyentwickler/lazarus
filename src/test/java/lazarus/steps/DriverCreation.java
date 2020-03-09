@@ -16,6 +16,8 @@ public class DriverCreation extends StepHelper{
     public void i_am_using_the_browser_Chrome() {
 
         System.setProperty("webdriver.chrome.driver", MAC_DRIVER_PATH);
+        System.setProperty("webdriver.chrome.silentOutput", "true");
+        System.setProperty("webdriver.chrome.silentLogging", "true");
 
         ChromeOptions options = new ChromeOptions();
 
