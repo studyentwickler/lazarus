@@ -29,18 +29,11 @@ public class DriverCreation extends StepHelper{
         options.addArguments("window-size=1900,1084");
         options.addArguments("start-maximized");
         options.addArguments("--disable-infobars");
-
-
         //options.addArguments("--headless");
 
         logger.info("############ Opening a browser Chrome ############");
 
         driver = new ChromeDriver(options);
-
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
-        Point point = new Point(0, 0);
-        driver.manage().window().setPosition(point);
 
     }
 

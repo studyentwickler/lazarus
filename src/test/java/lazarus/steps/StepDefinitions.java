@@ -22,18 +22,18 @@ public class StepDefinitions extends StepHelper {
     public void afterMethod(Scenario scenario) {
 
         if (scenario.isFailed()) {
-            logger.info("🤮=============================🤮");
+            logger.info("⛔ ############################## ⛔");
             logger.info("Starting to finish the execution");
-            logger.info("🤮=============================🤮");
-            logger.info("Test completed starting closing the driver.");
 
         } else {
-            logger.info("==😀😀 Finish the execution 😀😀==");
-            logger.info("Test completed starting closing the driver.");
+            logger.info("✅ ############################## ✅");
+            logger.info("Test completed starting closing the driver");
         }
 
         try {
 
+            logger.info("⛔ ############################## ⛔");
+            logger.info("Test completed starting closing the driver");
             driver.quit();
 
         } catch (Exception e) {
