@@ -20,15 +20,17 @@ public class DriverCreation extends StepHelper{
         ChromeOptions options = new ChromeOptions();
 
         options.addArguments("test-type");
-        options.addArguments("start-maximized");
         options.addArguments("--js-flags=--expose-gc");
         options.addArguments("--enable-precise-memory-info");
         options.addArguments("--disable-popup-blocking");
         options.addArguments("--disable-default-apps");
         options.addArguments("test-type=browser");
-        options.addArguments("disable-infobars");
         options.addArguments("--disable-notifications");
         options.addArguments("window-size=1900,1084");
+        options.addArguments("start-maximized");
+        options.addArguments("--disable-infobars");
+
+
         //options.addArguments("--headless");
 
         logger.info("############ Opening a browser Chrome ############");
@@ -37,16 +39,9 @@ public class DriverCreation extends StepHelper{
 
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
-        Point point = new Point(500, 4);
+        Point point = new Point(0, 0);
         driver.manage().window().setPosition(point);
-    }
-
-
-    @And("I close the browser Chrome")
-    public void i_close_the_browser_Chrome() {
-
-        logger.info("############ Closing a browser Chrome ############");
-        driver.close();
 
     }
+
 }
