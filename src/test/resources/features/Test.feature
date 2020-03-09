@@ -1,7 +1,7 @@
 @Test
-Feature: Test web seite
+Feature: Test web site
 
-  Scenario Outline: Test web seite
+  Scenario Outline: Test web site
     Given I am using the browser Chrome
     And I go to the main "<Web Page>"
     And I close the browser Chrome
