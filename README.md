@@ -8,7 +8,7 @@ This framework is written in Java and based on
 - Log4j
 
 ## Reports
-It is generated the pretty html reports by cucumber reporting plugin.
+It is generated the pretty html reports.
 
 ![Cucumber reports](https://i.imgur.com/zsw8DXI.png)
 
