@@ -1,12 +1,9 @@
 package lazarus.steps;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
-import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
 
 public class DriverCreation extends StepHelper{
 
@@ -17,36 +14,38 @@ public class DriverCreation extends StepHelper{
 
         System.setProperty("webdriver.chrome.driver", MAC_DRIVER_PATH);
 
+        // Start block to make logging off
+
+        /*
+        *  ####### Make off the logging out in the console of Selenium #######
+        * Mär 10, 2020 9:01:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+        * INFORMATION: Detected dialect: W3C
+        * */
+
+        System.setProperty("webdriver.chrome.silentOutput", "true");
+        System.setProperty("webdriver.chrome.silentLogging", "true");
+        java.util.logging.Logger.getLogger("org.openqa.selenium").setLevel(Level.OFF);
+
+        // End of block
+
         ChromeOptions options = new ChromeOptions();
 
         options.addArguments("test-type");
-        options.addArguments("start-maximized");
         options.addArguments("--js-flags=--expose-gc");
         options.addArguments("--enable-precise-memory-info");
         options.addArguments("--disable-popup-blocking");
         options.addArguments("--disable-default-apps");
         options.addArguments("test-type=browser");
-        options.addArguments("disable-infobars");
         options.addArguments("--disable-notifications");
         options.addArguments("window-size=1900,1084");
+        options.addArguments("start-maximized");
+        options.addArguments("--disable-infobars");
         //options.addArguments("--headless");
 
         logger.info("############ Opening a browser Chrome ############");
 
         driver = new ChromeDriver(options);
 
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-
-        Point point = new Point(500, 4);
-        driver.manage().window().setPosition(point);
     }
 
-
-    @And("I close the browser Chrome")
-    public void i_close_the_browser_Chrome() {
-
-        logger.info("############ Closing a browser Chrome ############");
-        driver.close();
-
-    }
 }
