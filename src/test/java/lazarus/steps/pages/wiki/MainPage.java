@@ -1,4 +1,4 @@
-package lazarus.steps.pages;
+package lazarus.steps.pages.wiki;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
