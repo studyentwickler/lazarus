@@ -8,7 +8,7 @@ public class Steps extends StepHelper {
     @Given("I go to the main {string}")
     public void i_go_to_the_main(String url) {
 
-        logger.info("Unsere URL ist: " + url);
+        logger.info("The opened URL is : " + url);
         driver.get(url);
     }
 
