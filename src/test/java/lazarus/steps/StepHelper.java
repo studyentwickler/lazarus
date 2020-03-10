@@ -10,5 +10,4 @@ public class StepHelper {
     protected static WebDriver driver = null;
     protected static Logger logger = Logger.getLogger(MethodHandles.lookup().lookupClass());
 
-
 }
