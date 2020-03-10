@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-03-10T18:56:13.472Z",
+        "start_timestamp": "2020-03-10T19:16:16.402Z",
         "before": [
           {
             "result": {
-              "duration": 41000000,
+              "duration": 37000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 125000000,
+              "duration": 118000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1962000000,
+              "duration": 2964000000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 859000000,
+              "duration": 698000000,
               "status": "passed"
             },
             "line": 6,
@@ -91,11 +91,10 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-03-10T18:56:16.536Z",
+        "start_timestamp": "2020-03-10T19:16:20.315Z",
         "before": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -110,7 +109,7 @@
         "after": [
           {
             "result": {
-              "duration": 110000000,
+              "duration": 161000000,
               "status": "passed"
             },
             "match": {
@@ -123,7 +122,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1208000000,
+              "duration": 1236000000,
               "status": "passed"
             },
             "line": 5,
@@ -135,7 +134,7 @@
           },
           {
             "result": {
-              "duration": 661000000,
+              "duration": 585000000,
               "status": "passed"
             },
             "line": 6,
