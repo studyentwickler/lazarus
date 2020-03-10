@@ -5,13 +5,17 @@
       {
         "name": "I am using the browser Chrome",
         "aggregatedDurations": {
-          "median": 0.776,
-          "average": 0.776
+          "median": 0.585,
+          "average": 0.585
         },
         "durations": [
           {
-            "duration": 0.776,
+            "duration": 0.962,
             "location": "file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test.feature:5"
+          },
+          {
+            "duration": 0.208,
+            "location": "file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test2.feature:5"
           }
         ]
       }
@@ -23,13 +27,17 @@
       {
         "name": "I go to the main \"https://en.wikipedia.org/wiki/Main_Page\"",
         "aggregatedDurations": {
-          "median": 0.848,
-          "average": 0.848
+          "median": 0.76,
+          "average": 0.76
         },
         "durations": [
           {
-            "duration": 0.848,
+            "duration": 0.859,
             "location": "file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test.feature:6"
+          },
+          {
+            "duration": 0.661,
+            "location": "file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test2.feature:6"
           }
         ]
       }
