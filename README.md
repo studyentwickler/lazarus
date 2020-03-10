@@ -9,6 +9,7 @@ This framework is written in Java and based on
 
 ## Reports
 It is generated the pretty html reports by cucumber reporting plugin.
+
 ![Cucumber reports](https://i.imgur.com/zsw8DXI.png)
 
 ## Page object model
