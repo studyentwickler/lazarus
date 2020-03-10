@@ -7,7 +7,11 @@ This framework is written in Java and based on
 - Rest Assured
 - Log4j
 
+## Reports
 It is generated the pretty html reports by cucumber reporting plugin.
+![Cucumber reports](https://i.imgur.com/zsw8DXI.png)
+
+## Page object model
 Furthermore, it contains the page object model to have a nicer code.
 
 ## Most used commands:
@@ -61,3 +65,7 @@ Next command will then compile, test & package your Java project and even instal
 **Here are utilities classes**
 
 => src/test/resources/utilities
+
+**Here are HTML Reports**
+
+=> target/cucumber-html-report/cucumber-html-reports
