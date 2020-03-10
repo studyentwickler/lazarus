@@ -1,0 +1,10 @@
+2020-03-10 21:04:57 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-10 21:04:59 INFO  StepHelper:11 - The opened URL is : https://en.wikipedia.org/wiki/Main_Page
+2020-03-10 21:05:00 INFO  StepHelper:33 - ✅ ############################## ✅ 
+2020-03-10 21:05:00 INFO  StepHelper:34 - Test completed starting closing the driver
+2020-03-10 21:05:00 INFO  StepHelper:46 - Test completed.
+2020-03-10 21:05:00 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-10 21:05:01 INFO  StepHelper:11 - The opened URL is : https://en.wikipedia.org/wiki/Main_Page
+2020-03-10 21:05:02 INFO  StepHelper:33 - ✅ ############################## ✅ 
+2020-03-10 21:05:02 INFO  StepHelper:34 - Test completed starting closing the driver
+2020-03-10 21:05:02 INFO  StepHelper:46 - Test completed.
