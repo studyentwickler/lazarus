@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="6.041">
-<testcase classname="Test web site" name="Test web site" time="3.896">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="4.974">
+<testcase classname="Test web site" name="Test web site" time="2.774">
 <system-out><![CDATA[Given I am using the browser Chrome.........................................passed
 And I go to the main "https://en.wikipedia.org/wiki/Main_Page"..............passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test web site" name="Test web site" time="2">
+<testcase classname="Test web site" name="Test web site" time="2.079">
 <system-out><![CDATA[Given I am using the browser Chrome.........................................passed
 And I go to the main "https://en.wikipedia.org/wiki/Main_Page"..............passed
 ]]></system-out>
