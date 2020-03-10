@@ -7,12 +7,35 @@ import java.util.logging.Level;
 
 public class DriverCreation extends StepHelper{
 
-    private static final String MAC_DRIVER_PATH = "src/test/resources/drivers/chromedriver";
+    private static final String MAC_DRIVER_PATH = "src/test/resources/drivers/chromedriver_mac";
+    private static final String WIN_DRIVER_PATH = "src/test/resources/drivers/chromedriver_win.exe";
+    private static final String LINUX_DRIVER_PATH = "src/test/resources/drivers/chromedriver_linux";
+
 
     @Given("I am using the browser Chrome")
     public void i_am_using_the_browser_Chrome() {
 
-        System.setProperty("webdriver.chrome.driver", MAC_DRIVER_PATH);
+        String oS = System.getProperty("os.name").toLowerCase();
+
+        if (oS.contains("windows")) {
+
+            System.setProperty("webdriver.chrome.driver", WIN_DRIVER_PATH);
+
+        } else if (oS.contains("mac")) {
+
+            System.setProperty("webdriver.chrome.driver", MAC_DRIVER_PATH);
+
+        } else if (oS.contains("linux")) {
+
+            System.setProperty("webdriver.chrome.driver", LINUX_DRIVER_PATH);
+
+        } else {
+
+            logger.info("This is the OS: " + oS);
+            logger.info("OS is not compatible, you need define the path of the chromedriver_mac again");
+            System.exit(0);
+
+        }
 
         // Start block to make logging off
 
