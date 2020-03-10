@@ -10,7 +10,7 @@ This framework is written in Java and based on
 It is generated the pretty html reports by cucumber reporting plugin.
 Furthermore, it contains the page object model to have a nicer code.
 
-Most used commands:
+## Most used commands:
 
 Start testing a specific feature file by tag
 - `mvn test -Dcucumber.filter.tags="@Test"`
