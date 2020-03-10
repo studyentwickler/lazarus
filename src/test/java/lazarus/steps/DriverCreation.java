@@ -3,8 +3,6 @@ package lazarus.steps;
 import io.cucumber.java.en.Given;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
-import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
 public class DriverCreation extends StepHelper{
@@ -19,7 +17,7 @@ public class DriverCreation extends StepHelper{
         // Start block to make logging off
 
         /*
-        *  ####### Make off the logging out in console of Selenium #######
+        *  ####### Make off the logging out in the console of Selenium #######
         * Mär 10, 2020 9:01:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
         * INFORMATION: Detected dialect: W3C
         * */
@@ -29,7 +27,6 @@ public class DriverCreation extends StepHelper{
         java.util.logging.Logger.getLogger("org.openqa.selenium").setLevel(Level.OFF);
 
         // End of block
-
 
         ChromeOptions options = new ChromeOptions();
 

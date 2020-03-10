@@ -13,15 +13,16 @@ public class MainPage {
     protected static Logger logger = Logger.getLogger(MethodHandles.lookup().lookupClass());
 
     public MainPage(WebDriver driver) {
+
         this.driver = driver;
     }
 
-    //Variables Section
+    // Variables Section
 
-    //Locators Section
+    // Locators Section
 
     By signIn = By.xpath("");
 
-    //Methods Section
+    // Methods Section
 
 }

@@ -8,7 +8,14 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
         features = "src/test/resources/features",
-        plugin = {"pretty"},
+        plugin = {
+                "html:target/cucumber-html-report",
+                "html:target/site/cucumber-pretty",
+                "json:target/cucumber-html-report/cucumber.json",
+                "pretty:target/cucumber-html-report/cucumber-pretty.txt",
+                "usage:target/cucumber-html-report/cucumber-usage.json",
+                "junit:target/cucumber-html-report/cucumber-results.xml"
+        },
         glue = {"lazarus.steps"},
         strict = true
 )
