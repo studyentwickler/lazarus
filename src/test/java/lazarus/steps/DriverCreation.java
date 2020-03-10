@@ -1,12 +1,11 @@
 package lazarus.steps;
 
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
 
 public class DriverCreation extends StepHelper{
 
@@ -16,8 +15,21 @@ public class DriverCreation extends StepHelper{
     public void i_am_using_the_browser_Chrome() {
 
         System.setProperty("webdriver.chrome.driver", MAC_DRIVER_PATH);
+
+        // Start block to make logging off
+
+        /*
+        *  ####### Make off the logging out in console of Selenium #######
+        * Mär 10, 2020 9:01:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+        * INFORMATION: Detected dialect: W3C
+        * */
+
         System.setProperty("webdriver.chrome.silentOutput", "true");
         System.setProperty("webdriver.chrome.silentLogging", "true");
+        java.util.logging.Logger.getLogger("org.openqa.selenium").setLevel(Level.OFF);
+
+        // End of block
+
 
         ChromeOptions options = new ChromeOptions();
 

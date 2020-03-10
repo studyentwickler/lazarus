@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         plugin = {"pretty"},
-        glue = {"lazarus.steps"}
+        glue = {"lazarus.steps"},
+        strict = true
 )
 
 public class RunCucumberTest {
