@@ -31,7 +31,7 @@ Next command will then compile, test & package your Java project and even instal
 
 ## Structure
 
-**Here are steps**
+**Here are steps for Backend**
 
 => src/test/java/lazarus/steps/backend
 
