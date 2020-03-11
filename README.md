@@ -7,6 +7,8 @@ This framework is written in Java and based on
 - Rest Assured
 - Log4j
 
+It could work with Appium as well
+
 ## Reports
 It is generated the pretty html reports.
 
