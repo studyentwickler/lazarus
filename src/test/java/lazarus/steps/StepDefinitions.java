@@ -1,12 +1,21 @@
 package lazarus.steps;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
+import io.cucumber.java.*;
 import org.apache.log4j.PropertyConfigurator;
 import java.util.Properties;
 
 public class StepDefinitions extends StepHelper {
+
+    @AfterStep
+    public void timeoutAfterStep(){
+
+        try {
+            Thread.sleep(1000);
+        } catch (Exception e) {
+            //
+        }
+
+    }
 
     @Before
     public void setupBefore() {
