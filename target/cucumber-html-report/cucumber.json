@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-03-10T20:04:57.566Z",
+        "start_timestamp": "2020-03-12T13:53:28.740Z",
         "before": [
           {
             "result": {
-              "duration": 44000000,
+              "duration": 37000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 10,
+        "line": 11,
         "name": "Test web site",
         "description": "",
         "id": "test-web-site;test-web-site;;2",
         "after": [
           {
             "result": {
-              "duration": 106000000,
+              "duration": 123000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1876000000,
+              "duration": 2397000000,
               "status": "passed"
             },
             "line": 5,
@@ -43,25 +43,80 @@
             "match": {
               "location": "lazarus.steps.DriverCreation.i_am_using_the_browser_Chrome()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 1001000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "lazarus.steps.StepDefinitions.timeoutAfterStep()"
+                }
+              }
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 683000000,
+              "duration": 737000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "I go to the main \"https://en.wikipedia.org/wiki/Main_Page\"",
+            "name": "I go to the main web page \"https://en.wikipedia.org/wiki/Main_Page\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"https://en.wikipedia.org/wiki/Main_Page\"",
-                  "offset": 17
+                  "offset": 26
                 }
               ],
-              "location": "lazarus.steps.web.Steps.i_go_to_the_main(java.lang.String)"
+              "location": "lazarus.steps.web.wiki.Steps.i_go_to_the_main_web_page(java.lang.String)"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 1002000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "lazarus.steps.StepDefinitions.timeoutAfterStep()"
+                }
+              }
+            ],
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I start to check that in right top corner I have text \"Welcome to\" and link title \"Wikipedia\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Welcome to\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"Wikipedia\"",
+                  "offset": 82
+                }
+              ],
+              "location": "lazarus.steps.web.wiki.Steps.iStartToCheckThatInRightTopCornerIHaveTextAndLinkTitle(java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1005000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "lazarus.steps.StepDefinitions.timeoutAfterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -79,94 +134,6 @@
     "tags": [
       {
         "name": "@Test",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2020-03-10T20:05:00.352Z",
-        "before": [
-          {
-            "result": {
-              "duration": 4000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "lazarus.steps.StepDefinitions.setupBefore()"
-            }
-          }
-        ],
-        "line": 10,
-        "name": "Test web site",
-        "description": "",
-        "id": "test-web-site;test-web-site;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 107000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "lazarus.steps.StepDefinitions.afterMethod(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1279000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I am using the browser Chrome",
-            "match": {
-              "location": "lazarus.steps.DriverCreation.i_am_using_the_browser_Chrome()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 674000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I go to the main \"https://en.wikipedia.org/wiki/Main_Page\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"https://en.wikipedia.org/wiki/Main_Page\"",
-                  "offset": 17
-                }
-              ],
-              "location": "lazarus.steps.web.Steps.i_go_to_the_main(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Test2"
-          }
-        ]
-      }
-    ],
-    "name": "Test web site",
-    "description": "",
-    "id": "test-web-site",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Test2.feature",
-    "tags": [
-      {
-        "name": "@Test2",
         "type": "Tag",
         "location": {
           "line": 1,

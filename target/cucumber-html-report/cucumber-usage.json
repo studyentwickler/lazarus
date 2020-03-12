@@ -5,39 +5,49 @@
       {
         "name": "I am using the browser Chrome",
         "aggregatedDurations": {
-          "median": 0.5775,
-          "average": 0.5775
+          "median": 0.397,
+          "average": 0.397
         },
         "durations": [
           {
-            "duration": 0.876,
+            "duration": 0.397,
             "location": "file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test.feature:5"
-          },
-          {
-            "duration": 0.279,
-            "location": "file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test2.feature:5"
           }
         ]
       }
     ]
   },
   {
-    "source": "I go to the main {string}",
+    "source": "I go to the main web page {string}",
     "steps": [
       {
-        "name": "I go to the main \"https://en.wikipedia.org/wiki/Main_Page\"",
+        "name": "I go to the main web page \"https://en.wikipedia.org/wiki/Main_Page\"",
         "aggregatedDurations": {
-          "median": 0.6785,
-          "average": 0.6785
+          "median": 0.737,
+          "average": 0.737
         },
         "durations": [
           {
-            "duration": 0.683,
+            "duration": 0.737,
             "location": "file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test.feature:6"
-          },
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I start to check that in right top corner I have text {string} and link title {string}",
+    "steps": [
+      {
+        "name": "I start to check that in right top corner I have text \"Welcome to\" and link title \"Wikipedia\"",
+        "aggregatedDurations": {
+          "median": 0.118,
+          "average": 0.118
+        },
+        "durations": [
           {
-            "duration": 0.674,
-            "location": "file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test2.feature:6"
+            "duration": 0.118,
+            "location": "file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test.feature:7"
           }
         ]
       }

@@ -1,6 +1,6 @@
 lazarus/steps/pages/wiki/MainPage.class
 lazarus/steps/StepHelper.class
-lazarus/steps/web/Steps.class
 lazarus/steps/DriverCreation.class
 lazarus/RunCucumberTest.class
+lazarus/steps/web/wiki/Steps.class
 lazarus/steps/StepDefinitions.class

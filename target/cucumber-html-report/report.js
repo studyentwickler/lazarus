@@ -19,8 +19,12 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "name": "I go to the main \"\u003cWeb Page\u003e\"",
+  "name": "I go to the main web page \"\u003cWeb Page\u003e\"",
   "keyword": "And "
+});
+formatter.step({
+  "name": "I start to check that in right top corner I have text \"\u003cText\u003e\" and link title \"\u003cTitle\u003e\"",
+  "keyword": "Then "
 });
 formatter.examples({
   "name": "",
@@ -29,12 +33,16 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "Web Page"
+        "Web Page",
+        "Text",
+        "Title"
       ]
     },
     {
       "cells": [
-        "https://en.wikipedia.org/wiki/Main_Page"
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "Welcome to",
+        "Wikipedia"
       ]
     }
   ]
@@ -62,91 +70,33 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.afterstep({
+  "status": "passed"
+});
 formatter.step({
-  "name": "I go to the main \"https://en.wikipedia.org/wiki/Main_Page\"",
+  "name": "I go to the main web page \"https://en.wikipedia.org/wiki/Main_Page\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "lazarus.steps.web.Steps.i_go_to_the_main(java.lang.String)"
+  "location": "lazarus.steps.web.wiki.Steps.i_go_to_the_main_web_page(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.after({
-  "status": "passed"
-});
-formatter.uri("file:src/test/resources/features/Test2.feature");
-formatter.feature({
-  "name": "Test web site",
-  "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@Test2"
-    }
-  ]
-});
-formatter.scenarioOutline({
-  "name": "Test web site",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "I am using the browser Chrome",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "I go to the main \"\u003cWeb Page\u003e\"",
-  "keyword": "And "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "Web Page"
-      ]
-    },
-    {
-      "cells": [
-        "https://en.wikipedia.org/wiki/Main_Page"
-      ]
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Test web site",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@Test2"
-    }
-  ]
-});
-formatter.before({
+formatter.afterstep({
   "status": "passed"
 });
 formatter.step({
-  "name": "I am using the browser Chrome",
-  "keyword": "Given "
+  "name": "I start to check that in right top corner I have text \"Welcome to\" and link title \"Wikipedia\"",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "lazarus.steps.DriverCreation.i_am_using_the_browser_Chrome()"
+  "location": "lazarus.steps.web.wiki.Steps.iStartToCheckThatInRightTopCornerIHaveTextAndLinkTitle(java.lang.String,java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.step({
-  "name": "I go to the main \"https://en.wikipedia.org/wiki/Main_Page\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "lazarus.steps.web.Steps.i_go_to_the_main(java.lang.String)"
-});
-formatter.result({
+formatter.afterstep({
   "status": "passed"
 });
 formatter.after({
