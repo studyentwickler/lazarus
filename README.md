@@ -12,7 +12,7 @@ It could work with Appium as well
 ## Reports
 It is generated the pretty html reports.
 
-![Cucumber reports](https://i.imgur.com/zsw8DXI.png)
+![Cucumber reports](https://i.imgur.com/UCGvnOx.png)
 
 ## Page object model
 Furthermore, it contains the page object model to have a nicer code.
