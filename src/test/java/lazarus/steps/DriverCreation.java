@@ -12,7 +12,6 @@ public class DriverCreation extends StepHelper {
     private static final String MAC_DRIVER_PATH = "src/test/resources/drivers/chromedriver_mac";
     private static final String WIN_DRIVER_PATH = "src/test/resources/drivers/chromedriver_win.exe";
     private static final String LINUX_DRIVER_PATH = "src/test/resources/drivers/chromedriver_linux";
-    private static final String LINUX_BIN = "/usr/bin/google-chrome-stable";
 
     @Given("I am using the browser Chrome")
     public void i_am_using_the_browser_Chrome() {
@@ -65,14 +64,9 @@ public class DriverCreation extends StepHelper {
         options.addArguments("window-size=1900,1084");
         options.addArguments("start-maximized");
         options.addArguments("--disable-infobars");
-        options.addArguments("--no-sandbox"); //fix launch on linux
-        options.addArguments("--disable-dev-shm-usage"); //fix launch on linux
-        options.addArguments("--headless");
-
-        // Fixing for Ubuntu
-        /*if (oS.contains("linux")){
-            options.setBinary(LINUX_BIN);
-        }*/
+        //options.addArguments("--no-sandbox"); //fix launch on linux
+        //options.addArguments("--disable-dev-shm-usage"); //fix launch on linux
+        //options.addArguments("--headless");
 
         logger.info("############ Opening a browser Chrome ############");
 
