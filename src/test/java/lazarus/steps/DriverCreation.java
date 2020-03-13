@@ -12,7 +12,7 @@ public class DriverCreation extends StepHelper {
     private static final String MAC_DRIVER_PATH = "src/test/resources/drivers/chromedriver_mac";
     private static final String WIN_DRIVER_PATH = "src/test/resources/drivers/chromedriver_win.exe";
     private static final String LINUX_DRIVER_PATH = "src/test/resources/drivers/chromedriver_linux";
-    private static final String LINUX_BIN = "google-chrome-stable";
+    private static final String LINUX_BIN = "/usr/bin/google-chrome-stable";
 
     @Given("I am using the browser Chrome")
     public void i_am_using_the_browser_Chrome() {
