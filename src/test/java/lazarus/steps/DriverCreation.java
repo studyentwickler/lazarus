@@ -25,7 +25,7 @@ public class DriverCreation extends StepHelper{
 
             System.setProperty("webdriver.chrome.driver", MAC_DRIVER_PATH);
 
-        } else if (oS.contains("linux")) {
+        } else if (oS.contains("Linux")) {
 
             System.setProperty("webdriver.chrome.driver", LINUX_DRIVER_PATH);
 
