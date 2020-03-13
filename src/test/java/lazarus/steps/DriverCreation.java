@@ -17,6 +17,7 @@ public class DriverCreation extends StepHelper {
     public void i_am_using_the_browser_Chrome() {
 
         String oS = System.getProperty("os.name").toLowerCase();
+        ChromeOptions options = new ChromeOptions();
 
         if (oS.contains("windows")) {
 
@@ -29,6 +30,7 @@ public class DriverCreation extends StepHelper {
         } else if (oS.contains("linux")) {
 
             System.setProperty("webdriver.chrome.driver", LINUX_DRIVER_PATH);
+            options.addArguments("--headless"); //fix launch on linux
 
         } else {
 
@@ -52,8 +54,6 @@ public class DriverCreation extends StepHelper {
 
         // End of block
 
-        ChromeOptions options = new ChromeOptions();
-
         options.addArguments("test-type");
         options.addArguments("--js-flags=--expose-gc");
         options.addArguments("--enable-precise-memory-info");
@@ -64,7 +64,6 @@ public class DriverCreation extends StepHelper {
         options.addArguments("window-size=1900,1084");
         options.addArguments("start-maximized");
         options.addArguments("--disable-infobars");
-        options.addArguments("--headless"); //fix launch on linux
 
         logger.info("############ Opening a browser Chrome ############");
 
