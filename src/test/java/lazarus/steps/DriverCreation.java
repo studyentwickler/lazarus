@@ -3,14 +3,16 @@ package lazarus.steps;
 import io.cucumber.java.en.Given;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
 import java.util.logging.Level;
 
-public class DriverCreation extends StepHelper{
+public class DriverCreation extends StepHelper {
 
     private static final String MAC_DRIVER_PATH = "src/test/resources/drivers/chromedriver_mac";
     private static final String WIN_DRIVER_PATH = "src/test/resources/drivers/chromedriver_win.exe";
     private static final String LINUX_DRIVER_PATH = "src/test/resources/drivers/chromedriver_linux";
-
+    private static final String LINUX_BIN = "google-chrome-stable";
 
     @Given("I am using the browser Chrome")
     public void i_am_using_the_browser_Chrome() {
@@ -40,10 +42,10 @@ public class DriverCreation extends StepHelper{
         // Start block to make logging off
 
         /*
-        *  ####### Make off the logging out in the console of Selenium #######
-        * Mär 10, 2020 9:01:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-        * INFORMATION: Detected dialect: W3C
-        * */
+         *  ####### Make off the logging out in the console of Selenium #######
+         * Mär 10, 2020 9:01:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+         * INFORMATION: Detected dialect: W3C
+         * */
 
         System.setProperty("webdriver.chrome.silentOutput", "true");
         System.setProperty("webdriver.chrome.silentLogging", "true");
@@ -66,6 +68,11 @@ public class DriverCreation extends StepHelper{
         options.addArguments("--no-sandbox"); //fix launch on linux
         options.addArguments("--disable-dev-shm-usage"); //fix launch on linux
         options.addArguments("--headless");
+
+        // Fixing for Ubuntu
+        if (oS.contains("linux")){
+            options.setBinary(LINUX_BIN);
+        }
 
         logger.info("############ Opening a browser Chrome ############");
 
