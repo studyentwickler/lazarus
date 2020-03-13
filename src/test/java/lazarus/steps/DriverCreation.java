@@ -65,7 +65,7 @@ public class DriverCreation extends StepHelper {
         options.addArguments("start-maximized");
         options.addArguments("--disable-infobars");
         options.addArguments("--no-sandbox"); //fix launch on linux
-        //options.addArguments("--disable-dev-shm-usage"); //fix launch on linux
+        options.addArguments("--disable-dev-shm-usage"); //fix launch on linux
         //options.addArguments("--headless");
 
         logger.info("############ Opening a browser Chrome ############");
