@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-03-12T13:53:28.740Z",
+        "start_timestamp": "2020-03-15T21:00:27.502Z",
         "before": [
           {
             "result": {
-              "duration": 37000000,
+              "duration": 38000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 11,
+        "line": 12,
         "name": "Test web site",
         "description": "",
         "id": "test-web-site;test-web-site;;2",
         "after": [
           {
             "result": {
-              "duration": 123000000,
+              "duration": 4000000,
               "status": "passed"
             },
             "match": {
@@ -35,47 +35,18 @@
         "steps": [
           {
             "result": {
-              "duration": 2397000000,
+              "duration": 4000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "I am using the browser Chrome",
+            "line": 8,
+            "name": "I am checking email",
             "match": {
-              "location": "lazarus.steps.DriverCreation.i_am_using_the_browser_Chrome()"
+              "location": "lazarus.steps.web.wiki.Steps.iAmCheckingEmail()"
             },
             "after": [
               {
                 "result": {
-                  "duration": 1001000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "lazarus.steps.StepDefinitions.timeoutAfterStep()"
-                }
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 737000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I go to the main web page \"https://en.wikipedia.org/wiki/Main_Page\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"https://en.wikipedia.org/wiki/Main_Page\"",
-                  "offset": 26
-                }
-              ],
-              "location": "lazarus.steps.web.wiki.Steps.i_go_to_the_main_web_page(java.lang.String)"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 1002000000,
+                  "duration": 1000000000,
                   "status": "passed"
                 },
                 "match": {
@@ -84,39 +55,6 @@
               }
             ],
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 118000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "I start to check that in right top corner I have text \"Welcome to\" and link title \"Wikipedia\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Welcome to\"",
-                  "offset": 54
-                },
-                {
-                  "val": "\"Wikipedia\"",
-                  "offset": 82
-                }
-              ],
-              "location": "lazarus.steps.web.wiki.Steps.iStartToCheckThatInRightTopCornerIHaveTextAndLinkTitle(java.lang.String,java.lang.String)"
-            },
-            "after": [
-              {
-                "result": {
-                  "duration": 1005000000,
-                  "status": "passed"
-                },
-                "match": {
-                  "location": "lazarus.steps.StepDefinitions.timeoutAfterStep()"
-                }
-              }
-            ],
-            "keyword": "Then "
           }
         ],
         "tags": [

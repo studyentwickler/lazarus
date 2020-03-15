@@ -15,16 +15,8 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "I am using the browser Chrome",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "I go to the main web page \"\u003cWeb Page\u003e\"",
+  "name": "I am checking email",
   "keyword": "And "
-});
-formatter.step({
-  "name": "I start to check that in right top corner I have text \"\u003cText\u003e\" and link title \"\u003cTitle\u003e\"",
-  "keyword": "Then "
 });
 formatter.examples({
   "name": "",
@@ -61,37 +53,11 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "I am using the browser Chrome",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "lazarus.steps.DriverCreation.i_am_using_the_browser_Chrome()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I go to the main web page \"https://en.wikipedia.org/wiki/Main_Page\"",
+  "name": "I am checking email",
   "keyword": "And "
 });
 formatter.match({
-  "location": "lazarus.steps.web.wiki.Steps.i_go_to_the_main_web_page(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I start to check that in right top corner I have text \"Welcome to\" and link title \"Wikipedia\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "lazarus.steps.web.wiki.Steps.iStartToCheckThatInRightTopCornerIHaveTextAndLinkTitle(java.lang.String,java.lang.String)"
+  "location": "lazarus.steps.web.wiki.Steps.iAmCheckingEmail()"
 });
 formatter.result({
   "status": "passed"

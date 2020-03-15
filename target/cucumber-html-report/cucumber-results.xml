@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.657">
-<testcase classname="Test web site" name="Test web site" time="6.498">
-<system-out><![CDATA[Given I am using the browser Chrome.........................................passed
-And I go to the main web page "https://en.wikipedia.org/wiki/Main_Page".....passed
-Then I start to check that in right top corner I have text "Welcome to" and link title "Wikipedia".passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.24">
+<testcase classname="Test web site" name="Test web site" time="1.109">
+<system-out><![CDATA[And I am checking email.....................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

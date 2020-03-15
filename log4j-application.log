@@ -297,3 +297,174 @@ All portals
 2020-03-12 14:53:35 INFO  StepHelper:42 - ✅ ############################## ✅ 
 2020-03-12 14:53:35 INFO  StepHelper:43 - Test completed starting closing the driver
 2020-03-12 14:53:35 INFO  StepHelper:55 - Test completed.
+2020-03-15 20:37:08 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 20:37:13 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 20:37:15 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 20:37:15 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 20:37:16 INFO  StepHelper:24 - info@alexanderwahl.eu
+2020-03-15 20:37:16 INFO  StepHelper:26 - akdskajduwad
+2020-03-15 20:37:16 INFO  StepHelper:24 - akdskajduwad
+2020-03-15 20:37:16 INFO  StepHelper:26 - 
+2020-03-15 20:37:17 INFO  StepHelper:42 - ✅ ############################## ✅ 
+2020-03-15 20:37:17 INFO  StepHelper:43 - Test completed starting closing the driver
+2020-03-15 20:37:17 INFO  StepHelper:55 - Test completed.
+2020-03-15 20:37:58 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 20:38:02 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 20:38:03 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 20:38:03 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 20:38:03 INFO  StepHelper:24 - info@alexanderwahl.eu
+2020-03-15 20:38:03 INFO  StepHelper:24 - akdskajduwad
+2020-03-15 20:38:04 INFO  StepHelper:42 - ✅ ############################## ✅ 
+2020-03-15 20:38:04 INFO  StepHelper:43 - Test completed starting closing the driver
+2020-03-15 20:38:05 INFO  StepHelper:55 - Test completed.
+2020-03-15 20:59:07 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 20:59:12 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 20:59:14 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 20:59:14 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 20:59:14 INFO  StepHelper:29 - info@alexanderwahl.eu
+2020-03-15 20:59:15 INFO  StepHelper:35 - ⛔ ############################## ⛔ 
+2020-03-15 20:59:15 INFO  StepHelper:36 - Starting to finish the execution
+2020-03-15 20:59:15 INFO  StepHelper:37 - ⛔ ############################## ⛔ 
+2020-03-15 20:59:15 INFO  StepHelper:38 - Test completed starting closing the driver
+2020-03-15 20:59:15 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:00:46 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 21:00:49 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 21:00:51 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 21:00:51 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 21:00:51 INFO  StepHelper:29 - info@alexanderwahl.eu
+2020-03-15 21:00:52 INFO  StepHelper:35 - ⛔ ############################## ⛔ 
+2020-03-15 21:00:52 INFO  StepHelper:36 - Starting to finish the execution
+2020-03-15 21:00:52 INFO  StepHelper:37 - ⛔ ############################## ⛔ 
+2020-03-15 21:00:52 INFO  StepHelper:38 - Test completed starting closing the driver
+2020-03-15 21:00:52 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:01:30 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 21:01:34 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 21:01:36 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 21:01:36 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 21:01:36 INFO  StepHelper:28 - info@alexanderwahl.eu
+2020-03-15 21:01:37 INFO  StepHelper:35 - ⛔ ############################## ⛔ 
+2020-03-15 21:01:37 INFO  StepHelper:36 - Starting to finish the execution
+2020-03-15 21:01:37 INFO  StepHelper:37 - ⛔ ############################## ⛔ 
+2020-03-15 21:01:37 INFO  StepHelper:38 - Test completed starting closing the driver
+2020-03-15 21:01:37 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:14:28 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 21:14:33 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 21:14:35 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 21:14:35 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 21:14:35 INFO  StepHelper:30 - info@alexanderwahl.eu
+2020-03-15 21:14:35 INFO  StepHelper:35 - info@alexanderwahl.eu
+2020-03-15 21:14:35 INFO  StepHelper:35 - akdskajduwad
+2020-03-15 21:14:35 INFO  StepHelper:40 - Login is info@alexanderwahl.eu
+2020-03-15 21:14:35 INFO  StepHelper:41 - Password is akdskajduwad
+2020-03-15 21:14:36 INFO  StepHelper:42 - ✅ ############################## ✅ 
+2020-03-15 21:14:36 INFO  StepHelper:43 - Test completed starting closing the driver
+2020-03-15 21:14:36 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:15:53 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 21:15:56 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 21:15:58 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 21:15:58 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 21:15:58 INFO  StepHelper:37 - Login is info@alexanderwahl.eu
+2020-03-15 21:15:58 INFO  StepHelper:38 - Password is akdskajduwad
+2020-03-15 21:15:59 INFO  StepHelper:42 - ✅ ############################## ✅ 
+2020-03-15 21:15:59 INFO  StepHelper:43 - Test completed starting closing the driver
+2020-03-15 21:15:59 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:39:28 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 21:39:33 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 21:39:35 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 21:39:35 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 21:39:36 INFO  StepHelper:35 - ⛔ ############################## ⛔ 
+2020-03-15 21:39:36 INFO  StepHelper:36 - Starting to finish the execution
+2020-03-15 21:39:36 INFO  StepHelper:37 - ⛔ ############################## ⛔ 
+2020-03-15 21:39:36 INFO  StepHelper:38 - Test completed starting closing the driver
+2020-03-15 21:39:36 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:40:35 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 21:40:39 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 21:40:41 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 21:40:41 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 21:40:42 INFO  StepHelper:35 - ⛔ ############################## ⛔ 
+2020-03-15 21:40:42 INFO  StepHelper:36 - Starting to finish the execution
+2020-03-15 21:40:42 INFO  StepHelper:37 - ⛔ ############################## ⛔ 
+2020-03-15 21:40:42 INFO  StepHelper:38 - Test completed starting closing the driver
+2020-03-15 21:40:42 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:41:53 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 21:41:56 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 21:41:58 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 21:41:58 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 21:41:58 INFO  StepHelper:27 - jenkins@alexanderwahl.eu
+2020-03-15 21:41:58 INFO  StepHelper:27 - uPh&22WFwHo3YYO0tgwdG
+2020-03-15 21:41:59 INFO  StepHelper:35 - ⛔ ############################## ⛔ 
+2020-03-15 21:41:59 INFO  StepHelper:36 - Starting to finish the execution
+2020-03-15 21:41:59 INFO  StepHelper:37 - ⛔ ############################## ⛔ 
+2020-03-15 21:41:59 INFO  StepHelper:38 - Test completed starting closing the driver
+2020-03-15 21:41:59 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:44:18 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 21:44:22 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 21:44:23 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 21:44:24 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 21:44:25 INFO  StepHelper:35 - ⛔ ############################## ⛔ 
+2020-03-15 21:44:25 INFO  StepHelper:36 - Starting to finish the execution
+2020-03-15 21:44:25 INFO  StepHelper:37 - ⛔ ############################## ⛔ 
+2020-03-15 21:44:25 INFO  StepHelper:38 - Test completed starting closing the driver
+2020-03-15 21:44:25 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:46:17 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 21:46:20 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 21:46:22 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 21:46:22 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 21:46:23 INFO  StepHelper:35 - ⛔ ############################## ⛔ 
+2020-03-15 21:46:23 INFO  StepHelper:36 - Starting to finish the execution
+2020-03-15 21:46:23 INFO  StepHelper:37 - ⛔ ############################## ⛔ 
+2020-03-15 21:46:23 INFO  StepHelper:38 - Test completed starting closing the driver
+2020-03-15 21:46:23 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:47:20 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 21:47:23 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 21:47:25 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 21:47:25 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 21:47:26 INFO  StepHelper:35 - ⛔ ############################## ⛔ 
+2020-03-15 21:47:26 INFO  StepHelper:36 - Starting to finish the execution
+2020-03-15 21:47:26 INFO  StepHelper:37 - ⛔ ############################## ⛔ 
+2020-03-15 21:47:26 INFO  StepHelper:38 - Test completed starting closing the driver
+2020-03-15 21:47:26 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:48:58 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 21:49:01 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 21:49:03 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 21:49:03 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 21:49:04 INFO  StepHelper:35 - ⛔ ############################## ⛔ 
+2020-03-15 21:49:04 INFO  StepHelper:36 - Starting to finish the execution
+2020-03-15 21:49:04 INFO  StepHelper:37 - ⛔ ############################## ⛔ 
+2020-03-15 21:49:04 INFO  StepHelper:38 - Test completed starting closing the driver
+2020-03-15 21:49:04 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:50:09 INFO  StepHelper:68 - ############ Opening a browser Chrome ############
+2020-03-15 21:50:12 INFO  StepHelper:15 - The web page, which should be checked, is: https://en.wikipedia.org/wiki/Main_Page
+2020-03-15 21:50:14 INFO  StepHelper:24 - Checking the greeting wording in the left top corner, that 'Welcome to' is 'Welcome to'
+2020-03-15 21:50:14 INFO  StepHelper:26 - Checking the title 'Welcome', it should be the same: 'Wikipedia'
+2020-03-15 21:50:15 INFO  StepHelper:35 - ⛔ ############################## ⛔ 
+2020-03-15 21:50:15 INFO  StepHelper:36 - Starting to finish the execution
+2020-03-15 21:50:15 INFO  StepHelper:37 - ⛔ ############################## ⛔ 
+2020-03-15 21:50:15 INFO  StepHelper:38 - Test completed starting closing the driver
+2020-03-15 21:50:15 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:52:24 INFO  StepHelper:35 - ⛔ ############################## ⛔ 
+2020-03-15 21:52:24 INFO  StepHelper:36 - Starting to finish the execution
+2020-03-15 21:52:24 INFO  StepHelper:37 - ⛔ ############################## ⛔ 
+2020-03-15 21:52:24 INFO  StepHelper:38 - Test completed starting closing the driver
+2020-03-15 21:52:24 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:54:11 INFO  StepHelper:41 - jenkins@alexanderwahl.eu
+2020-03-15 21:54:11 INFO  StepHelper:42 - uPh&22WFwHo3YYO0tgwdG
+2020-03-15 21:54:12 INFO  StepHelper:42 - ✅ ############################## ✅ 
+2020-03-15 21:54:12 INFO  StepHelper:43 - Test completed starting closing the driver
+2020-03-15 21:54:12 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:55:51 INFO  StepHelper:35 - ⛔ ############################## ⛔ 
+2020-03-15 21:55:51 INFO  StepHelper:36 - Starting to finish the execution
+2020-03-15 21:55:51 INFO  StepHelper:37 - ⛔ ############################## ⛔ 
+2020-03-15 21:55:51 INFO  StepHelper:38 - Test completed starting closing the driver
+2020-03-15 21:55:51 INFO  StepHelper:55 - Test completed.
+2020-03-15 21:59:25 INFO  StepHelper:42 - ✅ ############################## ✅ 
+2020-03-15 21:59:25 INFO  StepHelper:43 - Test completed starting closing the driver
+2020-03-15 21:59:25 INFO  StepHelper:55 - Test completed.
+2020-03-15 22:00:15 INFO  StepHelper:33 - uPh&22WFwHo3YYO0tgwdG
+2020-03-15 22:00:16 INFO  StepHelper:42 - ✅ ############################## ✅ 
+2020-03-15 22:00:16 INFO  StepHelper:43 - Test completed starting closing the driver
+2020-03-15 22:00:16 INFO  StepHelper:55 - Test completed.
+2020-03-15 22:00:27 INFO  StepHelper:33 - jenkins@alexanderwahl.eu
+2020-03-15 22:00:28 INFO  StepHelper:42 - ✅ ############################## ✅ 
+2020-03-15 22:00:28 INFO  StepHelper:43 - Test completed starting closing the driver
+2020-03-15 22:00:28 INFO  StepHelper:55 - Test completed.

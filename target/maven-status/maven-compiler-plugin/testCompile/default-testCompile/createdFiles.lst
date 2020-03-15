@@ -4,3 +4,4 @@ lazarus/steps/DriverCreation.class
 lazarus/RunCucumberTest.class
 lazarus/steps/web/wiki/Steps.class
 lazarus/steps/StepDefinitions.class
+lazarus/utilities/Authentication.class
