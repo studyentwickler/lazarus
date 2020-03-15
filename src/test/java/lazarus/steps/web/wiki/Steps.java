@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import lazarus.steps.StepHelper;
 import lazarus.steps.pages.wiki.MainPage;
+import lazarus.utilities.Authentication;
 import org.junit.Assert;
 
 public class Steps extends StepHelper {
@@ -26,4 +27,5 @@ public class Steps extends StepHelper {
         Assert.assertEquals("Wikipedia", mainpage.get_welcome_title());
 
     }
+
 }
