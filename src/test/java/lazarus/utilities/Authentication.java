@@ -24,7 +24,7 @@ public class Authentication extends StepHelper {
      * @param path of the txt file with authentication data
      * @return authenticationData HashMap<String, String>
      */
-    public static HashMap<String, String> jenkinsEmail(String path) {
+    public static HashMap<String, String> data(String path) {
 
         ArrayList<String> temporaryArray = new ArrayList<String>();
         HashMap<String, String> authenticationData = new HashMap<String, String>();
