@@ -1,62 +1,58 @@
 pipelineJob('Test') {
-    definition {
-        cps {
-            script('''
-                pipeline {
-                    agent any
-                        triggers {
-                            cron('15 02 * * 5')
-                        }
+  definition {
+   cps {
+    script('''pipeline {
+      agent any
+      triggers {
+       cron('15 02 * * 5')
+      }
 
-                    stages {
-
-                        stage('Getting the external project') {
-                            steps {
-                                git branch: 'master',
-                                credentialsId: '21d34ebb-1ee7-4bfd-a2bb-e468de987dd1',
-                                url: 'https://github.com/studyentwickler/lazarus.git'
-                                sh "ls -lat"
-                            }
-                        }
-
-                        stage('Execute the testing code') {
-                                steps {
-                                    echo 'Stage to execute the test case'
-                                    sh '/home/linuxbrew/.linuxbrew/bin/mvn test -Dcucumber.filter.tags="@Test"'
-                                }
-                        }
-
-                        stage('Generating Cucumber report') {
-                            steps {
-                              echo 'Starting to generate the cucumber reports'
-                              sleep(time:5,unit:"SECONDS")
-                              cucumber buildStatus: "UNSTABLE",
-                              fileIncludePattern: "**/cucumber.json",
-                              jsonReportDirectory: 'target'
-                                }
-                            }
-
-                        stage('Sending email') {
-                            steps {
-                              echo 'Generating an email'
-                              emailext body: 'A Test E-Mail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
-                                }
-                            }
-
-                        }
-                    }
-
-            '''.stripIndent())
-            sandbox()
+      stages {
+       stage('Getting the external project') {
+        steps {
+         git branch: 'master',
+          credentialsId: '21d34ebb-1ee7-4bfd-a2bb-e468de987dd1',
+          url: 'https://github.com/studyentwickler/lazarus.git'
+         sh "ls -lat"
         }
+       }
+
+       stage('Execute the testing code') {
+        steps {
+         echo 'Stage to execute the test case'
+         sh '/home/linuxbrew/.linuxbrew/bin/mvn test -Dcucumber.filter.tags="@Test"'
+        }
+       }
+
+       stage('Generating Cucumber report') {
+        steps {
+         echo 'Starting to generate the cucumber reports'
+         sleep(time: 5, unit: "SECONDS")
+         cucumber buildStatus: "UNSTABLE",
+          fileIncludePattern: "**/cucumber.json",
+          jsonReportDirectory: 'target'
+        }
+       }
+
+       stage('Sending email') {
+        steps {
+         echo 'Generating an email'
+          emailext body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} Cucumber Report: ${env.BUILD_URL}cucumber-html-reports/overview-features.html", recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: "Report: Job ${env.JOB_NAME}: ${currentBuild.currentResult}"
+        }
+       }
+      }
+     }
+     '''.stripIndent())
+     sandbox()
     }
-}
+   }
+  }
 
-buildMonitorView('Lazarus Jobs') {
-        description('All Lazarus Jobs')
-        jobFilters {
-            jobs {
-                name('Test')
-            }
-        }
-}
+  buildMonitorView('Lazarus Jobs') {
+   description('All Lazarus Jobs')
+   jobFilters {
+    jobs {
+     name('Test')
+    }
+   }
+  }
