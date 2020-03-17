@@ -28,7 +28,7 @@ public class MySqlAccess {
                             + "user=" + user + "&password=" + password);
             statement = connect.createStatement();
             resultSet = statement
-                    .executeQuery("select * from test_constants");
+                    .executeQuery("select * from credentials");
             logger.info(resultSet);
 
             assert resultSet != null;
