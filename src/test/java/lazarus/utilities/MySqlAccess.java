@@ -4,13 +4,13 @@ import org.apache.log4j.Logger;
 
 import java.lang.invoke.MethodHandles;
 import java.sql.*;
+import java.util.concurrent.ExecutionException;
 
 public class MySqlAccess {
 
     protected static Logger logger = Logger.getLogger(MethodHandles.lookup().lookupClass());
 
-
-    public void readDataBase() throws Exception {
+    public void readDataBase() {
 
         String path = TestConstants.get_database_credentials();
         String user = Authentication.dataFromTxtFile(path).get("Login");
@@ -20,17 +20,24 @@ public class MySqlAccess {
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
 
-        Class.forName("com.mysql.jdbc.Driver");
-        connect = DriverManager
-                .getConnection("jdbc:mysql://localhost/test_constants?"
-                        + "user=" + user + "&password=" + password);
-        statement = connect.createStatement();
-        resultSet = statement
-                .executeQuery("select * from test_constants");
-        logger.info(resultSet);
+        try {
 
-        assert resultSet != null;
-        resultSet.close();
+            Class.forName("com.mysql.jdbc.Driver");
+            connect = DriverManager
+                    .getConnection("jdbc:mysql://localhost/test_constants?"
+                            + "user=" + user + "&password=" + password);
+            statement = connect.createStatement();
+            resultSet = statement
+                    .executeQuery("select * from test_constants");
+            logger.info(resultSet);
+
+            assert resultSet != null;
+            resultSet.close();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
 
     }
 }
