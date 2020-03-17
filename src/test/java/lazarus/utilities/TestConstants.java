@@ -18,6 +18,7 @@ public class TestConstants {
         return "/Users/wahl/authentication.txt";
     }
 
+
     public static HashMap<String, String> email_settings() {
 
         HashMap<String, String> settings = new HashMap<String, String>();
