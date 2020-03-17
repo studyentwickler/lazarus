@@ -5,6 +5,7 @@ import io.cucumber.java.en.Then;
 import lazarus.steps.StepHelper;
 import lazarus.steps.pages.wiki.MainPage;
 import lazarus.utilities.Authentication;
+import lazarus.utilities.MySqlAccess;
 import org.junit.Assert;
 
 public class Steps extends StepHelper {
@@ -25,6 +26,9 @@ public class Steps extends StepHelper {
         Assert.assertEquals("Welcome to", mainpage.get_welcome_to());
         logger.info("Checking the title 'Welcome', it should be the same: " + "'" + mainpage.get_welcome_title() + "'");
         Assert.assertEquals("Wikipedia", mainpage.get_welcome_title());
+        MySqlAccess database = new MySqlAccess();
+        logger.info("Database connections checking");
+        database.readDataBase();
 
     }
 
