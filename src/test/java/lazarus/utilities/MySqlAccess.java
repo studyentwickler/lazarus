@@ -29,14 +29,20 @@ public class MySqlAccess {
             statement = connect.createStatement();
             resultSet = statement
                     .executeQuery("select * from credentials");
-            logger.info(resultSet.toString());
+
+            logger.info("The columns in the table are: ");
+
+            logger.info("Table: " + resultSet.getMetaData().getTableName(1));
+
+            for (int i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
+                logger.info("Column " + i + " " + resultSet.getMetaData().getColumnName(i));
+            }
 
             resultSet.close();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-
 
     }
 }
