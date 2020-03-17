@@ -25,7 +25,7 @@ public class Steps extends StepHelper {
         logger.info("Checking the greeting wording in the left top corner, that 'Welcome to' is " + "'" + mainpage.get_welcome_to() + "'");
         Assert.assertEquals("Welcome to", mainpage.get_welcome_to());
         logger.info("Checking the title 'Welcome', it should be the same: " + "'" + mainpage.get_welcome_title() + "'");
-        Assert.assertEquals("Wikipedia", mainpage.get_welcome_title());
+        Assert.assertEquals("Wikipediaw", mainpage.get_welcome_title());
         MySqlAccess database = new MySqlAccess();
         logger.info("Database connections checking");
 
