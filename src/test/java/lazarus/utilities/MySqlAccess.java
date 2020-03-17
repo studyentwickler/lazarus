@@ -4,7 +4,6 @@ import org.apache.log4j.Logger;
 
 import java.lang.invoke.MethodHandles;
 import java.sql.*;
-import java.util.concurrent.ExecutionException;
 
 public class MySqlAccess {
 

@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-03-15T21:00:27.502Z",
+        "start_timestamp": "2020-03-17T13:42:33.811Z",
         "before": [
           {
             "result": {
-              "duration": 38000000,
+              "duration": 48000000,
               "status": "passed"
             },
             "match": {
@@ -15,7 +15,7 @@
             }
           }
         ],
-        "line": 12,
+        "line": 11,
         "name": "Test web site",
         "description": "",
         "id": "test-web-site;test-web-site;;2",
@@ -35,13 +35,13 @@
         "steps": [
           {
             "result": {
-              "duration": 4000000,
+              "duration": 2680000000,
               "status": "passed"
             },
             "line": 8,
-            "name": "I am checking email",
+            "name": "I am sending email",
             "match": {
-              "location": "lazarus.steps.web.wiki.Steps.iAmCheckingEmail()"
+              "location": "lazarus.steps.web.wiki.Steps.iAmSendingEmail()"
             },
             "after": [
               {

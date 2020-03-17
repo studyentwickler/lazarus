@@ -1,16 +1,16 @@
 [
   {
-    "source": "I am checking email",
+    "source": "I am sending email",
     "steps": [
       {
-        "name": "I am checking email",
+        "name": "I am sending email",
         "aggregatedDurations": {
-          "median": 0.004,
-          "average": 0.004
+          "median": 0.68,
+          "average": 0.68
         },
         "durations": [
           {
-            "duration": 0.004,
+            "duration": 0.68,
             "location": "file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test.feature:8"
           }
         ]

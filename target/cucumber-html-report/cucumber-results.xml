@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.24">
-<testcase classname="Test web site" name="Test web site" time="1.109">
-<system-out><![CDATA[And I am checking email.....................................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.95">
+<testcase classname="Test web site" name="Test web site" time="3.812">
+<system-out><![CDATA[And I am sending email......................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

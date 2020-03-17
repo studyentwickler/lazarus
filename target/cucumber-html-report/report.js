@@ -15,7 +15,7 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "I am checking email",
+  "name": "I am sending email",
   "keyword": "And "
 });
 formatter.examples({
@@ -53,11 +53,11 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "I am checking email",
+  "name": "I am sending email",
   "keyword": "And "
 });
 formatter.match({
-  "location": "lazarus.steps.web.wiki.Steps.iAmCheckingEmail()"
+  "location": "lazarus.steps.web.wiki.Steps.iAmSendingEmail()"
 });
 formatter.result({
   "status": "passed"

@@ -1,4 +1,4 @@
 
 @Test
-Scenario Outline: Test web site [90m# src/test/resources/features/Test.feature:12[0m
-  [32mAnd [0m[32mI am checking email[0m       [90m# lazarus.steps.web.wiki.Steps.iAmCheckingEmail()[0m
+Scenario Outline: Test web site [90m# src/test/resources/features/Test.feature:11[0m
+  [32mAnd [0m[32mI am sending email[0m        [90m# lazarus.steps.web.wiki.Steps.iAmSendingEmail()[0m
