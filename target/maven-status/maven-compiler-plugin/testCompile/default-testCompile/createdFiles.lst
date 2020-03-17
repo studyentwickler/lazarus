@@ -4,4 +4,7 @@ lazarus/steps/DriverCreation.class
 lazarus/RunCucumberTest.class
 lazarus/steps/web/wiki/Steps.class
 lazarus/steps/StepDefinitions.class
+lazarus/utilities/Mail.class
+lazarus/utilities/TestConstants.class
 lazarus/utilities/Authentication.class
+lazarus/utilities/MySqlAccess.class
