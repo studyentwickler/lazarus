@@ -29,9 +29,8 @@ public class MySqlAccess {
             statement = connect.createStatement();
             resultSet = statement
                     .executeQuery("select * from credentials");
-            logger.info(resultSet);
+            logger.info(resultSet.toString());
 
-            assert resultSet != null;
             resultSet.close();
 
         } catch (Exception e) {
