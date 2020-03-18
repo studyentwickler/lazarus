@@ -117,7 +117,7 @@ formatter.after({
 });
 formatter.uri("file:src/test/resources/features/Test2.feature");
 formatter.feature({
-  "name": "Test web site",
+  "name": "Test2 web site",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -127,17 +127,9 @@ formatter.feature({
   ]
 });
 formatter.scenarioOutline({
-  "name": "Test web site",
+  "name": "Test2 web site",
   "description": "",
   "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "I am using the browser Chrome",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "I go to the main \"\u003cWeb Page\u003e\"",
-  "keyword": "And "
 });
 formatter.examples({
   "name": "",
@@ -157,7 +149,7 @@ formatter.examples({
   ]
 });
 formatter.scenario({
-  "name": "Test web site",
+  "name": "Test2 web site",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -165,43 +157,5 @@ formatter.scenario({
       "name": "@Test2"
     }
   ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am using the browser Chrome",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "lazarus.steps.DriverCreation.i_am_using_the_browser_Chrome()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.embedding("image/png", "embedded3.png", null);
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I go to the main \"https://en.wikipedia.org/wiki/Main_Page\"",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.embedding("image/png", "embedded4.png", null);
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.afterstep({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
 });
 });

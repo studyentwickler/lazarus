@@ -51,11 +51,11 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                3,
+                2,
                 1,
                 0,
                 0,
-                1
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                0,
-                2
+                1,
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   0,
-                   2
+                   1,
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -234,7 +234,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>lazarus</td>
               <td>1</td>
-            <td>18 M&auml;r 2020, 11:46</td>
+            <td>18 M&auml;r 2020, 12:17</td>
     </tr>
   </tbody>
 </table>
@@ -342,58 +342,58 @@ $(document).ready(function() {
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="4705000000">4s 705ms</td>
+        <td class="duration" data-value="9554000000">9s 554ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_file-src-test-resources-features-Test2-feature.html">Test web site</a></td>
+        <td class="tagname"><a href="report-feature_file-src-test-resources-features-Test2-feature.html">Test2 web site</a></td>
         
-        <td      class="passed"    >1</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td   class="undefined" >1</td>
-        <td class="total">2</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">0</td>
 
+        <td  class="passed"    >1</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="1927000000">1s 927ms</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="0">000ms</td>
+        <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td>2</td>
-            <td>3</td>
+            <td>2</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>1</td>
-      <td>5</td>
-
       <td>0</td>
-      <td>2</td>
+      <td>3</td>
+
+      <td>1</td>
+      <td>1</td>
       <td>2</td>
 
-      <td class="duration">6s 632ms</td>
+      <td class="duration">9s 554ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>60.00%</td>
-      <td>20.00%</td>
+            <td>66.67%</td>
+      <td>33.33%</td>
       <td>0.00%</td>
       <td>0.00%</td>
-      <td>20.00%</td>
+      <td>0.00%</td>
       <td></td>
-      <td>0.00%</td>
-      <td>100.00%</td>
+      <td>50.00%</td>
+      <td>50.00%</td>
       <td></td>
       <td></td>
-      <td>0.00%</td>
+      <td>50.00%</td>
     </tr>
   </tfoot>
 </table>

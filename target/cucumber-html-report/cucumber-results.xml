@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="15.984">
-<testcase classname="Test web site" name="Test web site" time="10.657">
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="15.165">
+<testcase classname="Test web site" name="Test web site" time="15.034">
 <failure message="expected:&lt;Wikipedia[w]&gt; but was:&lt;Wikipedia[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given I am using the browser Chrome.........................................passed
 And I go to the main web page "https://en.wikipedia.org/wiki/Main_Page".....passed
 Then I start to check that in right top corner I have text "Welcome to" and link title "Wikipedia".failed
@@ -13,9 +13,7 @@ org.junit.ComparisonFailure: expected:<Wikipedia[w]> but was:<Wikipedia[]>
 	at ✽.I start to check that in right top corner I have text "Welcome to" and link title "Wikipedia"(file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test.feature:7)
 ]]></failure>
 </testcase>
-<testcase classname="Test web site" name="Test web site" time="5.147">
-<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given I am using the browser Chrome.........................................passed
-And I go to the main "https://en.wikipedia.org/wiki/Main_Page"..............undefined
-]]></failure>
+<testcase classname="Test2 web site" name="Test2 web site" time="0.009">
+<failure message="The scenario has no steps" type="java.lang.Exception"/>
 </testcase>
 </testsuite>

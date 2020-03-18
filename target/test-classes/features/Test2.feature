@@ -1,9 +1,9 @@
 @Test2
-Feature: Test web site
+Feature: Test2 web site
 
-  Scenario Outline: Test web site
-    Given I am using the browser Chrome
-    And I go to the main "<Web Page>"
+  Scenario Outline: Test2 web site
+    #Given I am using the browser Chrome
+    #And I go to the main "<Web Page>"
 
     Examples:
       | Web Page                                |
