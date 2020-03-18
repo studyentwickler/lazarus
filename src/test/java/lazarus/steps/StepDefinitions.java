@@ -1,7 +1,6 @@
 package lazarus.steps;
 
 import io.cucumber.java.*;
-import io.cucumber.plugin.event.EmbedEvent;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -62,7 +61,9 @@ public class StepDefinitions extends StepHelper {
 
     @AfterStep
     public void takingScreenshot(Scenario scenario) {
-        final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-        scenario.embed(screenshot, "image/jpeg");
+
+        byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+        scenario.embed(screenshot, "image/png");
+
     }
 }

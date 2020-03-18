@@ -1,7 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: lazarus.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.582 sec <<< FAILURE! - in lazarus.RunCucumberTest
-Test web site(Test web site)  Time elapsed: 10.27 sec  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 1, Skipped: 0, Time elapsed: 16.244 sec <<< FAILURE! - in lazarus.RunCucumberTest
+Test web site(Test web site)  Time elapsed: 10.792 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<Wikipedia[w]> but was:<Wikipedia[]>
+
+Test web site(Test web site)  Time elapsed: 5.178 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "I go to the main "https://en.wikipedia.org/wiki/Main_Page"" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I go to the main {string}")
+public void i_go_to_the_main(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
 
