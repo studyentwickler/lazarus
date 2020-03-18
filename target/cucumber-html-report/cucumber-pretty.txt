@@ -1,4 +1,21 @@
 
 @Test
-Scenario Outline: Test web site [90m# src/test/resources/features/Test.feature:11[0m
-  [32mAnd [0m[32mI am sending email[0m        [90m# lazarus.steps.web.wiki.Steps.iAmSendingEmail()[0m
+Scenario Outline: Test web site                                                                      [90m# src/test/resources/features/Test.feature:12[0m
+  [32mGiven [0m[32mI am using the browser Chrome[0m                                                                [90m# lazarus.steps.DriverCreation.i_am_using_the_browser_Chrome()[0m
+
+    Embedding null [image/jpeg 26177 bytes]
+
+  [32mAnd [0m[32mI go to the main web page [0m[32m[1m"https://en.wikipedia.org/wiki/Main_Page"[0m                            [90m# lazarus.steps.web.wiki.Steps.i_go_to_the_main_web_page(java.lang.String)[0m
+
+    Embedding null [image/jpeg 1557126 bytes]
+
+  [31mThen [0m[31mI start to check that in right top corner I have text [0m[31m[1m"Welcome to"[0m[31m and link title [0m[31m[1m"Wikipedia"[0m [90m# lazarus.steps.web.wiki.Steps.iStartToCheckThatInRightTopCornerIHaveTextAndLinkTitle(java.lang.String,java.lang.String)[0m
+      [31morg.junit.ComparisonFailure: expected:<Wikipedia[w]> but was:<Wikipedia[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at lazarus.steps.web.wiki.Steps.iStartToCheckThatInRightTopCornerIHaveTextAndLinkTitle(Steps.java:28)
+	at ✽.I start to check that in right top corner I have text "Welcome to" and link title "Wikipedia"(file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test.feature:7)
+[0m
+
+    Embedding null [image/jpeg 1557126 bytes]
+

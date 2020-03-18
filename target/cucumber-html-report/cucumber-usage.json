@@ -1,17 +1,35 @@
 [
   {
-    "source": "I am sending email",
+    "source": "I am using the browser Chrome",
     "steps": [
       {
-        "name": "I am sending email",
+        "name": "I am using the browser Chrome",
         "aggregatedDurations": {
-          "median": 0.68,
-          "average": 0.68
+          "median": 0.471,
+          "average": 0.471
         },
         "durations": [
           {
-            "duration": 0.68,
-            "location": "file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test.feature:8"
+            "duration": 0.471,
+            "location": "file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "I go to the main web page {string}",
+    "steps": [
+      {
+        "name": "I go to the main web page \"https://en.wikipedia.org/wiki/Main_Page\"",
+        "aggregatedDurations": {
+          "median": 0.754,
+          "average": 0.754
+        },
+        "durations": [
+          {
+            "duration": 0.754,
+            "location": "file:///Users/wahl/Desktop/testing/lazarus/src/test/resources/features/Test.feature:6"
           }
         ]
       }
