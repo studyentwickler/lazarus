@@ -2,12 +2,15 @@ package lazarus.steps;
 
 import io.cucumber.java.*;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
 import java.util.Properties;
 
 public class StepDefinitions extends StepHelper {
 
     @AfterStep
-    public void timeoutAfterStep(){
+    public void timeoutAfterStep() {
 
         try {
             Thread.sleep(1000);
@@ -53,6 +56,14 @@ public class StepDefinitions extends StepHelper {
         }
 
         logger.info("Test completed.");
+
+    }
+
+    @AfterStep
+    public void takingScreenshot(Scenario scenario) {
+
+        byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+        scenario.embed(screenshot, "image/png");
 
     }
 }

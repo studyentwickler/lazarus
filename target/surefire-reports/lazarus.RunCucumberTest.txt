@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: lazarus.RunCucumberTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.073 sec - in lazarus.RunCucumberTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.397 sec <<< FAILURE! - in lazarus.RunCucumberTest
+Test web site(Test web site)  Time elapsed: 15.14 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Wikipedia[w]> but was:<Wikipedia[]>
+

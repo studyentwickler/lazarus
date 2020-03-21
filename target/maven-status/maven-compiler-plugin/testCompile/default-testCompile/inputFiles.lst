@@ -1,6 +1,10 @@
 /Users/wahl/Desktop/testing/lazarus/src/test/java/lazarus/steps/StepHelper.java
+/Users/wahl/Desktop/testing/lazarus/src/test/java/lazarus/steps/web/wiki/Steps.java
+/Users/wahl/Desktop/testing/lazarus/src/test/java/lazarus/utilities/Authentication.java
 /Users/wahl/Desktop/testing/lazarus/src/test/java/lazarus/steps/pages/wiki/MainPage.java
+/Users/wahl/Desktop/testing/lazarus/src/test/java/lazarus/utilities/Mail.java
 /Users/wahl/Desktop/testing/lazarus/src/test/java/lazarus/steps/DriverCreation.java
+/Users/wahl/Desktop/testing/lazarus/src/test/java/lazarus/utilities/MySqlAccess.java
+/Users/wahl/Desktop/testing/lazarus/src/test/java/lazarus/utilities/TestConstants.java
 /Users/wahl/Desktop/testing/lazarus/src/test/java/lazarus/steps/StepDefinitions.java
-/Users/wahl/Desktop/testing/lazarus/src/test/java/lazarus/steps/web/Steps.java
 /Users/wahl/Desktop/testing/lazarus/src/test/java/lazarus/RunCucumberTest.java
