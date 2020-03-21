@@ -69,6 +69,10 @@ Next command will then compile, test & package your Java project and even instal
 
 => src/test/resources/utilities
 
+**Here are constants which are used while testing**
+
+=> src/test/resources/utilities/TestConstants
+
 **Here are HTML Reports**
 
 => target/cucumber-html-report/cucumber-html-reports
