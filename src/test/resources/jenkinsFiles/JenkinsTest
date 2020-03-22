@@ -8,7 +8,7 @@ pipelineJob('WikipediaHomePage') {
       }
 
       stages {
-       stage('Fetching the external project from GitHub') {
+       stage('Fetching data from GitHub') {
         steps {
          git branch: 'master',
           credentialsId: '21d34ebb-1ee7-4bfd-a2bb-e468de987dd1',
@@ -37,7 +37,7 @@ pipelineJob('WikipediaHomePage') {
        stage('Sending email') {
         steps {
          echo 'Generating an email'
-          emailext body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} Cucumber Report: ${env.BUILD_URL}cucumber-html-reports/overview-features.html", recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], to: "walenber@yandex.ru", subject: "Report: Job ${env.JOB_NAME}: ${currentBuild.currentResult}"
+          emailext body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} Cucumber Report: ${env.BUILD_URL}cucumber-html-reports/overview-features.html", recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: "Report: Job ${env.JOB_NAME}: ${currentBuild.currentResult}", to: "walenberg@ya.ru"
         }
        }
       }
