@@ -37,7 +37,7 @@ pipelineJob('WikipediaHomePage') {
        stage('Sending email') {
         steps {
          echo 'Generating an email'
-          emailext body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} Cucumber Report: ${env.BUILD_URL}cucumber-html-reports/overview-features.html", recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']],to: 'walenber@ya.ru', subject: "Report: Job ${env.JOB_NAME}: ${currentBuild.currentResult}"
+          emailext body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} Cucumber Report: ${env.BUILD_URL}cucumber-html-reports/overview-features.html", recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], to: 'walenber@yandex.ru', subject: "Report: Job ${env.JOB_NAME}: ${currentBuild.currentResult}"
         }
        }
       }
