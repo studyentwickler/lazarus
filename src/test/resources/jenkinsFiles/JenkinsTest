@@ -1,4 +1,4 @@
-pipelineJob('Test') {
+pipelineJob('WikipediaHomePage') {
   definition {
    cps {
     script('''pipeline {
@@ -8,7 +8,7 @@ pipelineJob('Test') {
       }
 
       stages {
-       stage('Getting the external project') {
+       stage('Fetching the external project from GitHub') {
         steps {
          git branch: 'master',
           credentialsId: '21d34ebb-1ee7-4bfd-a2bb-e468de987dd1',
@@ -17,10 +17,10 @@ pipelineJob('Test') {
         }
        }
 
-       stage('Execute the testing code') {
+       stage('Code compiling') {
         steps {
          echo 'Stage to execute the test case'
-         sh '/home/linuxbrew/.linuxbrew/bin/mvn test -Dcucumber.filter.tags="@Test"'
+         sh '/home/linuxbrew/.linuxbrew/bin/mvn test -Dcucumber.filter.tags="@WikipediaHomePage"'
         }
        }
 
@@ -37,7 +37,7 @@ pipelineJob('Test') {
        stage('Sending email') {
         steps {
          echo 'Generating an email'
-          emailext body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} Cucumber Report: ${env.BUILD_URL}cucumber-html-reports/overview-features.html", recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: "Report: Job ${env.JOB_NAME}: ${currentBuild.currentResult}"
+          emailext body: "${currentBuild.currentResult}: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} Cucumber Report: ${env.BUILD_URL}cucumber-html-reports/overview-features.html", recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']],to: 'walenber@ya.ru', subject: "Report: Job ${env.JOB_NAME}: ${currentBuild.currentResult}"
         }
        }
       }
@@ -48,11 +48,11 @@ pipelineJob('Test') {
    }
   }
 
-  buildMonitorView('Lazarus Jobs') {
+  buildMonitorView('Lazarus') {
    description('All Lazarus Jobs')
    jobFilters {
     jobs {
-     name('Test')
+     name('WikipediaHomePage')
     }
    }
   }
